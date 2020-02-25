@@ -281,6 +281,7 @@ DIST          = /home/john/qt5/qtbase/mkspecs/features/spec_pre.prf \
 		/home/john/qt5/qtbase/mkspecs/features/qt_config.prf \
 		/home/john/qt5/qtbase/mkspecs/wasm-emscripten/qmake.conf \
 		/home/john/qt5/qtbase/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/john/qt5/qtbase/mkspecs/features/exclusive_builds.prf \
 		/home/john/qt5/qtbase/mkspecs/features/toolchain.prf \
 		/home/john/qt5/qtbase/mkspecs/features/default_pre.prf \
@@ -518,6 +519,7 @@ Makefile: ExampleApp.pro /home/john/qt5/qtbase/mkspecs/wasm-emscripten/qmake.con
 		/home/john/qt5/qtbase/mkspecs/features/qt_config.prf \
 		/home/john/qt5/qtbase/mkspecs/wasm-emscripten/qmake.conf \
 		/home/john/qt5/qtbase/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/john/qt5/qtbase/mkspecs/features/exclusive_builds.prf \
 		/home/john/qt5/qtbase/mkspecs/features/toolchain.prf \
 		/home/john/qt5/qtbase/mkspecs/features/default_pre.prf \
@@ -693,6 +695,7 @@ Makefile: ExampleApp.pro /home/john/qt5/qtbase/mkspecs/wasm-emscripten/qmake.con
 /home/john/qt5/qtbase/mkspecs/features/qt_config.prf:
 /home/john/qt5/qtbase/mkspecs/wasm-emscripten/qmake.conf:
 /home/john/qt5/qtbase/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/john/qt5/qtbase/mkspecs/features/exclusive_builds.prf:
 /home/john/qt5/qtbase/mkspecs/features/toolchain.prf:
 /home/john/qt5/qtbase/mkspecs/features/default_pre.prf:
@@ -3507,6 +3510,43 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		/home/john/qt5/qtbase/include/QtWidgets/qrubberband.h \
 		/home/john/qt5/qtbase/src/widgets/widgets/qrubberband.h \
 		ui_mainwindow.h \
+		/home/john/qt5/qtbase/include/QtCore/QVariant \
+		/home/john/qt5/qtbase/include/QtWidgets/QAction \
+		/home/john/qt5/qtbase/include/QtWidgets/qaction.h \
+		/home/john/qt5/qtbase/src/widgets/kernel/qaction.h \
+		/home/john/qt5/qtbase/include/QtWidgets/qactiongroup.h \
+		/home/john/qt5/qtbase/src/widgets/kernel/qactiongroup.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QHeaderView \
+		/home/john/qt5/qtbase/include/QtWidgets/qheaderview.h \
+		/home/john/qt5/qtbase/src/widgets/itemviews/qheaderview.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QMenu \
+		/home/john/qt5/qtbase/include/QtWidgets/qmenu.h \
+		/home/john/qt5/qtbase/src/widgets/widgets/qmenu.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QMenuBar \
+		/home/john/qt5/qtbase/include/QtWidgets/qmenubar.h \
+		/home/john/qt5/qtbase/src/widgets/widgets/qmenubar.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QStatusBar \
+		/home/john/qt5/qtbase/include/QtWidgets/qstatusbar.h \
+		/home/john/qt5/qtbase/src/widgets/widgets/qstatusbar.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QTableWidget \
+		/home/john/qt5/qtbase/include/QtWidgets/QToolBar \
+		/home/john/qt5/qtbase/include/QtWidgets/qtoolbar.h \
+		/home/john/qt5/qtbase/src/widgets/widgets/qtoolbar.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QToolButton \
+		/home/john/qt5/qtbase/include/QtWidgets/qtoolbutton.h \
+		/home/john/qt5/qtbase/src/widgets/widgets/qtoolbutton.h \
+		/home/john/qt5/qtbase/include/QtWidgets/qabstractbutton.h \
+		/home/john/qt5/qtbase/src/widgets/widgets/qabstractbutton.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QVBoxLayout \
+		/home/john/qt5/qtbase/include/QtWidgets/qboxlayout.h \
+		/home/john/qt5/qtbase/src/widgets/kernel/qboxlayout.h \
+		/home/john/qt5/qtbase/include/QtWidgets/qlayout.h \
+		/home/john/qt5/qtbase/src/widgets/kernel/qlayout.h \
+		/home/john/qt5/qtbase/include/QtWidgets/qlayoutitem.h \
+		/home/john/qt5/qtbase/src/widgets/kernel/qlayoutitem.h \
+		/home/john/qt5/qtbase/include/QtWidgets/qgridlayout.h \
+		/home/john/qt5/qtbase/src/widgets/kernel/qgridlayout.h \
+		/home/john/qt5/qtbase/include/QtWidgets/QWidget \
 		../TypesetWidget/parser.h \
 		/home/john/qt5/qtbase/include/QtCore/QString \
 		/home/john/qt5/qtbase/include/QtCore/QTextStream \

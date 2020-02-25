@@ -366,11 +366,8 @@ public:
         menuFile->addAction(actionSave);
         menuFile->addAction(actionSave_As);
         menuFile->addSeparator();
-        menuFile->addAction(actionPrint);
-        menuFile->addSeparator();
         menuFile->addAction(actionExit);
         menuDebug->addAction(actionLoad_Test_txt);
-        menuDebug->addAction(actionTest_for_Memory_Leaks);
         menuWindow->addAction(actionZoom_In);
         menuWindow->addAction(actionZoom_Out);
         menuWindow->addAction(actionReset_Zoom);
@@ -384,7 +381,6 @@ public:
         menuEdit->addSeparator();
         menuEdit->addAction(actionCut);
         menuEdit->addAction(actionCopy);
-        menuEdit->addAction(actionCopy_as_PNG);
         menuEdit->addAction(actionPaste);
         mainToolBar->addAction(actionSubscript);
         mainToolBar->addAction(actionSuperscript);

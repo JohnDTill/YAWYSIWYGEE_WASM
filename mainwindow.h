@@ -35,14 +35,12 @@ private slots:
     void on_actionLoad_triggered();
     void on_actionSave_triggered();
     void on_actionSave_As_triggered();
-    void on_actionPrint_triggered();
     NO_RETURN(void on_actionExit_triggered())
 
     void on_actionUndo_triggered();
     void on_actionRedo_triggered();
 
     void on_actionLoad_Test_txt_triggered();
-    NO_RETURN(void on_actionTest_for_Memory_Leaks_triggered())
 
     void on_actionZoom_In_triggered();
     void on_actionZoom_Out_triggered();
@@ -50,7 +48,6 @@ private slots:
     void on_actionShow_Line_Numbers_toggled(bool show);
     void on_actionVanilla_triggered();
     void on_actionChalkboard_triggered();
-    void on_actionCopy_as_PNG_triggered();
 
     void on_actionFraction_triggered();
     void on_actionMatrix_triggered();
@@ -86,7 +83,6 @@ private slots:
     void on_groupButton_triggered(QAction *arg1);
 
 private:
-    NO_RETURN(void testForMemoryLeaks())
     bool lineNumbersShown() const;
     void setupSymbolTable();
 };

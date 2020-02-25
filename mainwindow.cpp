@@ -63,11 +63,11 @@ MainWindow::~MainWindow(){
 }
 
 void MainWindow::on_actionNew_triggered(){
-    typeset_edit.newDocument();
+    typeset_edit.newDocument(true, lineNumbersShown());
 }
 
 void MainWindow::on_actionLoad_triggered(){
-    typeset_edit.loadPrompt();
+    typeset_edit.loadPrompt(true, lineNumbersShown());
 }
 
 void MainWindow::on_actionSave_triggered(){
@@ -76,10 +76,6 @@ void MainWindow::on_actionSave_triggered(){
 
 void MainWindow::on_actionSave_As_triggered(){
     typeset_edit.savePrompt();
-}
-
-void MainWindow::on_actionPrint_triggered(){
-    typeset_edit.printSvgPrompt();
 }
 
 void MainWindow::on_actionExit_triggered(){
@@ -95,11 +91,7 @@ void MainWindow::on_actionRedo_triggered(){
 }
 
 void MainWindow::on_actionLoad_Test_txt_triggered(){
-    typeset_edit.load(":/test.txt");
-}
-
-void MainWindow::on_actionTest_for_Memory_Leaks_triggered(){
-    testForMemoryLeaks();
+    typeset_edit.load(":/test.txt", true, lineNumbersShown());
 }
 
 void MainWindow::on_actionZoom_In_triggered(){
@@ -140,16 +132,8 @@ void MainWindow::on_actionChalkboard_triggered(){
     typeset_edit.scene()->setPalette(chalkboard);
 }
 
-void MainWindow::testForMemoryLeaks(){
-    for(;;) on_actionLoad_Test_txt_triggered();
-}
-
 bool MainWindow::lineNumbersShown() const{
     return ui->actionShow_Line_Numbers->isChecked();
-}
-
-void MainWindow::on_actionCopy_as_PNG_triggered(){
-    typeset_edit.copySelectionAsPng();
 }
 
 void MainWindow::on_actionFraction_triggered(){
