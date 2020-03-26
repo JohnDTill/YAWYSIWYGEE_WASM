@@ -1,10 +1,17 @@
 #Qt
 *.pro.user*
 build*
+*.pro*
+*.qrc
+*.ui
+Makefile
 
 #C++
 *.lib
 *.a
+*.o
+*.h
+*.cpp
 
 #LaTeX
 *.aux
